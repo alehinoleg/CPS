@@ -1,0 +1,7 @@
+.globalMain {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
+    .globalMain {width: initial;}
+}

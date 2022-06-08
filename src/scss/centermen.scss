@@ -1,0 +1,11 @@
+.centermen {
+    position: relative;
+}
+
+@media (min-width: 1440px) {
+    .centermen {
+        display: flex;
+        margin: 0 auto;
+        width: 1426px;
+    }
+}

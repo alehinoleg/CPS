@@ -1,0 +1,56 @@
+@import './normalize.css';
+@import './centermen.scss';
+@import './menu.scss';
+@import './globalMain.scss';
+@import './header.scss';
+@import './logo.scss';
+@import './social-block.scss';
+@import './title-site.scss';
+@import './main.scss';
+@import './slide-menu.scss';
+@import './main-content.scss';
+@import './button-read.scss';
+@import './titleBlock.scss';
+@import './swiper.scss';
+@import './button-swiper.scss';
+@import './commercial-proposal.scss';
+@import './footer.scss';
+@import './contact-information.scss';
+@import './section-language.scss';
+@import './feedback.scss';
+@import './blur-block.scss';
+
+
+$colorBody: #F8F8F8;
+$colorText: hsl(230, 10%, 12%);
+$white: #fff;
+
+@font-face {
+  font-family: TTLakes-Bold;
+  src:url("../fonts/TTLakes-Bold.ttf");
+}
+
+@font-face {
+  font-family: TTLakes-Medium;
+  src:url("../fonts/TTLakes-Medium.ttf");
+}
+
+@font-face {
+  font-family: TTLakes-Regular;
+  src:url("../fonts/TTLakes-Regular.ttf");
+}
+
+body {
+  font-family: 'TTLakes-Medium';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $colorText;
+  background-color: $colorBody;
+}
+
+a {
+  text-decoration: none;
+  color: $colorText;
+}

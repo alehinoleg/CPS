@@ -1,0 +1,36 @@
+.logo {
+    width: 110px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        background-color: #EAEAEA;
+        border-radius: 3px;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    @media (min-width: 768px) and (max-width: 1439px) {
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 2px;
+            height: 32px;
+            background-color: #EAEAEA;
+            border-radius: 3px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+.section-language {
+    padding: 0 24px;
+    padding-bottom: 23px;
+    margin-top: 35px;
+}
+
+.section-language__button {
+    border: none;
+    background-color: white;
+    padding: 0;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.section-language__button--active {
+    color: #7E7E82;
+}
+
+.section-language__button--active:hover {
+    cursor: default;
+}

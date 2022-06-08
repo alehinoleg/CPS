@@ -1,0 +1,29 @@
+.title-site {
+    font-family: 'TTLakes-Bold';
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    padding: 0 20px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 40px;
+        background-color: #41F6D7;
+        border-radius: 0% 10px 10px 0%;
+        position: absolute;
+        left: 0;
+    }
+
+    @media (min-width: 1440px) {
+        &::before {
+            display: none;
+        }
+
+        & {
+            border-left: 4px solid #41F6D7;
+            border-radius: 2px;
+        }
+    }
+}

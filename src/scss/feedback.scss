@@ -1,0 +1,124 @@
+.feedback {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: 303px;
+    min-height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    z-index: 4;
+    padding: 32px;
+    box-sizing: border-box;
+    transform: translateX(500px);
+    transition: 1s;
+
+    &__close {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: #F8F8F8;
+        transition-duration: 0.5s;
+    }
+
+    &__close:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
+
+    &__close:active {
+        transform: rotate(90deg);
+        transition-duration: 0.5s;
+    }
+
+    &__close img {
+        position: relative;
+        left: -6px;
+        top: 0px;
+    }
+
+    &__h2 {
+        display: flex;
+        align-items: center;
+    }
+
+    &__h2::before {
+        content: '';
+        display: inline-block;
+        width: 3px;
+        height: 40px;
+        background-color: #41F6D7;
+        border-radius: 0 5px 5px 0;
+        position: absolute;
+        left: 0;
+    }
+
+    &__input {
+        padding: 8px 18px;
+        border-radius: 5px;
+        border: 1px solid #EAEAEA;
+        width: 87%;
+        margin-bottom: 17px;
+        color: #B5B6BC;
+    }
+
+    &__input::placeholder {
+        color: #B5B6BC;
+    }
+
+    &__input:focus {
+        border: 1px solid #41F6D7;
+        outline: none;
+    }
+
+    textarea {
+        color: #B5B6BC;
+        resize: none;
+    }
+
+    &__info {
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        width: 100%;
+        text-align: justify
+    }
+
+    &__link {
+        color: #FF3E79;
+    }
+    
+    &__submit {
+        background-image: url('../img/submit.svg');
+        border: none;
+        width: 136px;
+        height: 32px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: auto;
+        display: block;
+        transition-duration: 0.5s;
+    }
+
+    &__submit:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
+}
+
+@media (min-width: 768px) {
+    .feedback {
+        width: 423px;
+        border-left: 1px solid #D9FFF5;
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+        transform: translateX(500px);
+        transition: 1s;
+    }
+
+    .feedback__close {
+        position: absolute;
+        left: -60px;
+        top: 35px;
+    }
+}

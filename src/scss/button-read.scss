@@ -1,0 +1,43 @@
+.button-read {
+    background-color: #F8F8F8;
+    border: none;
+    cursor: pointer;
+    font-family: TTLakes-Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-bottom: 20px;
+
+    &__expandTop {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/expand.svg');
+    }
+
+    &__expandTop::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/expand.svg');
+        transform: rotate(180deg);
+        vertical-align: bottom;
+    }
+
+    @media (min-width: 1440px) {
+        & {
+            display: none;
+        }
+
+        &__expandTop {
+            display: block;
+        }
+    }
+}

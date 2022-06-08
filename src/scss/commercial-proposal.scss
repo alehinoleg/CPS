@@ -1,0 +1,31 @@
+.commercial-proposal {
+    padding: 0 20px;
+
+    &__text {
+        text-align: justify;
+    }
+
+    &__link {
+        font-family: TTLakes-Bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+
+    &__link::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../img/more.svg');
+        position: relative;
+        top: 3px;
+    }
+
+    @media (min-width: 768px) {
+        &__text {
+            width: 50%;
+        }
+    }
+}

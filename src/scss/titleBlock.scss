@@ -1,0 +1,15 @@
+.title-block {
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    margin: 24px 0;
+
+    &__h2 {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: #7E7E82;
+        padding: 20px 20px;
+        margin: 0;
+    }
+}

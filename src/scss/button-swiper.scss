@@ -1,0 +1,59 @@
+.button-swiperTop {
+    display: none;
+    margin-left: 20px;
+    font-family: TTLakes-Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.button-swiperBottom {
+    display: none;
+    margin-left: 20px;
+    font-family: TTLakes-Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.button-swiperTop2 {
+    display: none;
+    margin-left: 20px;
+    font-family: TTLakes-Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.button-swiperBottom2 {
+    display: none;
+    margin-left: 20px;
+    font-family: TTLakes-Bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .button-swiperBottom {
+        display: block;
+    }
+
+    .button-swiperBottom2 {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+    .button-swiperBottom {
+        display: block;
+    }
+
+    .button-swiperBottom2 {
+        display: block;
+    }
+}

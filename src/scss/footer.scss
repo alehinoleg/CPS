@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #7E7E82;
+    opacity: 0.72;
+    border-top: 1px solid #D9FFF5;
+    margin-top: 50px;
+
+    &__span {
+        display: block;
+    }
+
+    & p {
+        margin: 10px;
+    }
+
+    @media (min-width: 768px) {
+        & {
+            flex-direction: row;
+        }
+
+        &__copyright {
+            text-align: left;
+            flex-basis: 33.3%;
+        }
+
+        &__politics {
+            text-align: center;
+            flex-basis: 33.3%;
+        }
+
+        &__offer {
+            text-align: right;
+            flex-basis: 33.3%;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        & {
+            width: 1120px;
+            margin: 50px auto 0 auto;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+}
