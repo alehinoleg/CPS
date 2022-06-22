@@ -9,7 +9,7 @@
     color: #1B1C21;
     margin-bottom: 20px;
 
-    &__expandTop {
+    &--expandTop {
         display: none;
     }
 
@@ -21,7 +21,7 @@
         background-image: url('../img/expand.svg');
     }
 
-    &__expandTop::before {
+    &--expandTop::before {
         content: '';
         display: inline-block;
         width: 20px;
@@ -36,7 +36,7 @@
             display: none;
         }
 
-        &__expandTop {
+        &--expandTop {
             display: block;
         }
     }
