@@ -9,20 +9,13 @@
         flex-wrap: nowrap;
         overflow: auto;
         white-space: nowrap;
-        padding: 10px 12px;
+        padding: 10px 0px;
     }
 
     &__paragraph {
         list-style: none;
-    }
-
-    &__item {
         padding: 8px 12px;
         border: 2px solid #F8F8F8;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #7E7E82;
         margin-right: 10px;
 
         &:hover {
@@ -35,8 +28,15 @@
         }
     }
 
+    &__item {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+    }
+
     @media (min-width: 1440px) {
-        & {
+        &__list {
             overflow: hidden;
             flex-wrap: wrap;
             justify-content: space-between;
